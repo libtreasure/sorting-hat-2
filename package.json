@@ -1,0 +1,20 @@
+{
+  "name": "sorting-hat-2",
+  "version": "1.0.0",
+  "description": "TS version # The Booking Sorting Hat #",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx tsc && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
