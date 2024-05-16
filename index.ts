@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 
 app.get("/:inputName", (request: Request, response: Response) => {
     const { inputName } = request.params;
-    const houseName : string = getHouse(inputName);
+    const houseName : string | undefined = getHouse(inputName);
     response.status(200).send(houseName);
 });
 
