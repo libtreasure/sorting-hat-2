@@ -8,5 +8,4 @@ export function getHouse(name : string){
     } else {
         return name + " you are in " + "Slythcarin"
     }
-
 }
