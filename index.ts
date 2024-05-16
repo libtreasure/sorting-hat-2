@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import dotenv from "dotenv";
+import {sortingHat} from "./sorting";
 
 // configures dotenv to work in your application
 dotenv.config();
@@ -7,9 +8,12 @@ const app = express();
 
 const PORT = process.env.PORT;
 
-app.get("/", (request: Request, response: Response) => {
-  response.status(200).send("Gryffinsure!");
+app.get("/:name", (request: Request, response: Response) => {
+    const {name} = request.params;
+  response.status(200).send(sortingHat(name));
+  console.log(name)
 });
+
 
 app
   .listen(PORT, () => {
